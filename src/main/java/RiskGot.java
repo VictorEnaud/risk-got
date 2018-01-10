@@ -9,6 +9,7 @@ public class RiskGot {
         System.out.println("Creating Houses...");
 
         Set<House> houses = new CreateHousesList().createHousesList();
+//        Set<Kingdom> kingdoms = new CreateKingdomList().createKingdomList();
 
 
         System.out.println("Houses created:");
