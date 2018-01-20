@@ -7,14 +7,14 @@ import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class CreateHousesListUTest {
+public class CreateHouseListUTest {
     @Test
     public void shouldCreateSetOf8Houses() {
         // Given
-        CreateHousesList createHousesList = new CreateHousesList();
+        CreateHouseList createHouseList = new CreateHouseList();
 
         // When
-        Set<House> houseSet = createHousesList.createHousesList();
+        Set<House> houseSet = createHouseList.createHousesList();
 
         // Then
         assertThat(houseSet).hasSize(8);

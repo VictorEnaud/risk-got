@@ -5,7 +5,7 @@ import domain.House;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class CreateHousesList {
+public class CreateHouseList {
     public Set<House> createHousesList() {
         LinkedHashSet<House> houseSet = new LinkedHashSet<>();
         houseSet.add(new House("Arryn"));
