@@ -6,6 +6,7 @@ import java.util.Set;
 
 public class Kingdom {
     private String name;
+    private House controller;
     private Set<Kingdom> neighbors;
 
     public Kingdom(String name) {
@@ -36,5 +37,13 @@ public class Kingdom {
 
     public Set<Kingdom> getNeighbors() {
         return neighbors;
+    }
+
+    public House getController() {
+        return controller;
+    }
+
+    public void setController(House controller) {
+        this.controller = controller;
     }
 }
