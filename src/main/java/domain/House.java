@@ -4,9 +4,11 @@ import java.util.Objects;
 
 public class House {
     private String name;
+    private boolean isPlayer;
 
     public House(String name) {
         this.name = name;
+        this.isPlayer = false;
     }
 
     @Override
@@ -24,5 +26,13 @@ public class House {
 
     public String getName() {
         return name;
+    }
+
+    public boolean isPlayer() {
+        return isPlayer;
+    }
+
+    public void chosenByPlayer() {
+        this.isPlayer = true;
     }
 }
