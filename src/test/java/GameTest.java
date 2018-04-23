@@ -4,12 +4,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class GameTest {
     @Test
-    void shouldCreateTwoPlayers_onInit() {
+    void shouldCreateTwoHouses_onInit() {
         // When
         Game game = new Game();
 
         // Then
-        assertThat(game.getPlayers()).hasSize(2);
+        assertThat(game.getHouses()).hasSize(2);
     }
 
     @Test
@@ -19,5 +19,6 @@ class GameTest {
 
         // Then
         assertThat(game.getKingdoms()).hasSize(2);
+        assertThat(game.getKingdoms().get(0)).isInstanceOf(Kingdom.class);
     }
 }
